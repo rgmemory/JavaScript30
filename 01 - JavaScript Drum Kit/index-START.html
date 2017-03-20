@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>JS Drum Kit</title>
+  <title>start</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+
 
 
   <div class="keys">
@@ -58,6 +60,15 @@
   <audio data-key="76" src="sounds/tink.wav"></audio>
 
 <script>
+
+
+
+  window.addEventListener('keydown', function(e){
+
+
+    const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+    console.log(audio);
+
 
 </script>
 
